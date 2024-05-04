@@ -5,6 +5,7 @@ st.write("# Hello👋,Welcome to the Ownrecipe!")
 
 st.header("	Here you can make your favourite dish,in a easy step by step process followed by our instructions.")
 
+st.button('hi')
 st.sidebar.title('Menu')
 add_selectbox = st.sidebar.selectbox('Options',
 	('Home','Resources')
