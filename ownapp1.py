@@ -58,5 +58,13 @@ my_bar =st.progress(0)
 
 for percentage_complete in range(100):
 	time.sleep(0.05)
-	my_bar.progress(percentage_complete + 1) 
-
+st.title('Biryani')
+upload_file = file_uploader('Choose a file')
+if uploaded_file is not none:
+	df = pd.read_csv(uploaded_file)
+	st.subheader('DataFrame')
+	st.write(df)
+	st.subheader('Descriptive Statistics')
+	st.write(df.describe())
+else:
+	st.info('☝️ Upload a CSV file')
