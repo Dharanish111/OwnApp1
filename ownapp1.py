@@ -59,7 +59,7 @@ my_bar =st.progress(0)
 for percentage_complete in range(100):
 	time.sleep(0.05)
 st.title('Biryani')
-uploaded_file = file_uploader("Choose a file")
+uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file is not none:
 	df = pd.read_csv(uploaded_file)
 	st.subheader('DataFrame')
