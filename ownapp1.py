@@ -58,6 +58,8 @@ my_bar =st.progress(0)
 
 for percentage_complete in range(100):
 	time.sleep(0.05)
+	my_bar.progress(percent_complete + 1)
+	
 st.title('Biryani')
 uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file is not none:
