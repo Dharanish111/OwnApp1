@@ -3,23 +3,23 @@ import pandas as pd
 import numpy as np
 st.write("# Hello👋,Welcome to the Ownrecipe!")
 
-st.header("     Here you can make your favourite dish,in a easy step by step process followed by our instructions.")
+st.header("	Here you can make your favourite dish,in a easy step by step process followed by our instructions.")
 
 st.sidebar.title('Menu')
 add_selectbox = st.sidebar.selectbox('Options',
-        ('Home','Resources')
+	('Home','Resources')
 )
-Minutes = st.slider("In minutes",0,60,5)
+Minutes = st.sidebar.slider("In minutes",0,60,5)
 st.header('Line chart')
 chart_data = pd.DataFrame(
-        np.random.randn(20,3),
-        columns = ['a','b','c']
+	np.random.randn(20,3),
+	columns = ['a','b','c']
 )
 st.line_chart(chart_data)
 st.header("Choose Your Food!")
 option = st.selectbox(
-        'Favourite Food',
-        ('Indian','Mexican','Chinese','Thai','Italian','Japanese','French')
+	'Favourite Food',
+	('Indian','Mexican','Chinese','Thai','Italian','Japanese','French')
 )
 st.write('Your favourite food is ',option)
 
