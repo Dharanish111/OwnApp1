@@ -54,7 +54,7 @@ else:
      st.write('wanna cook')
 st.title('Baking')
 with st.expander('About this'):
-     st.write('You can now display the progress of your calculations in a streamlitapp with the 'st.progress' command.')
+     st.write("You can now display the progress of your calculations in a streamlitapp with the 'st.progress' command.")
 my_bar = progress(0)
 for percentage_complete in range(100) 
 	time.sleep(0.05)
