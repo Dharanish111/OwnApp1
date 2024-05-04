@@ -56,7 +56,7 @@ st.title('Baking')
 with st.expander('About this'):
      st.write("You can now display the progress of your calculations in a streamlitapp with the 'st.progress' command.")
 my_bar = progress(0)
-for percentage_complete in range(100) 
+for percentage_complete in range(100):
 	time.sleep(0.05)
 	my_bar.progress(percentage_complete + 1) 
  st.ballons()
