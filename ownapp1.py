@@ -46,7 +46,7 @@ options = st.multiselect(
      ['Samosa', 'Bajji', 'Puff', 'Sweets'],
      ['Samosa', 'Sweets'])
 if st.button('Start'):
-	st.write('Gonna,have a wonderful cooking experience')
-`else:
-	st.write('wanna cook')
+     st.write('Gonna,have a wonderful cooking experience')
+else:
+     st.write('wanna cook')
 st.write('You selected:', options)
