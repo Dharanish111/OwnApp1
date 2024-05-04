@@ -5,7 +5,6 @@ st.write("# Hello👋,Welcome to the Ownrecipe!")
 
 st.header("	Here you can make your favourite dish,in a easy step by step process followed by our instructions.")
 
-st.button('hi')
 st.sidebar.title('Menu')
 add_selectbox = st.sidebar.selectbox('Options',
 	('Home','Resources')
@@ -46,5 +45,8 @@ options = st.multiselect(
      'Your most favorite snacks',
      ['Samosa', 'Bajji', 'Puff', 'Sweets'],
      ['Samosa', 'Sweets'])
-
+if st.button('Start'):
+	st.write('Gonna,have a wonderful cooking experience')
+`else:
+	st.write('wanna cook')
 st.write('You selected:', options)
