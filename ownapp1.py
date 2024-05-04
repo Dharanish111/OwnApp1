@@ -54,7 +54,7 @@ if st.button('Start'):
 else:
      st.write('wanna cook')
 	
-st.title('Bakingss')
+st.title('Baking')
 my_bar = st.progress(0)
 for percent_complete in range(100):
      time.sleep(0.05)
