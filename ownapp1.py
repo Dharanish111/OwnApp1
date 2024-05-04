@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import time
 st.write("# Hello👋,Welcome to the Ownrecipe!")
 
 st.header("	Here you can make your favourite dish,in a easy step by step process followed by our instructions.")
@@ -51,3 +52,11 @@ if st.button('Start'):
      st.header('Gonna,have a wonderful cooking experience')
 else:
      st.write('wanna cook')
+st.title('Baking')
+with st.expander('About this')
+     st.write('You can now display the progress of your calculations in a streamlitapp with the 'st.progress' command.')
+my_bar = progress(0)
+for percentage_complete in range(100) 
+	time.sleep(0.05)
+	my_bar.progress(percentage_complete + 1) 
+ st.ballons()
