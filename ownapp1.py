@@ -52,13 +52,13 @@ if st.button('Start'):
      st.header('Gonna,have a wonderful cooking experience')
 else:
      st.write('wanna cook')
+	
 st.title('Baking')
-
-my_bar =st.progress(0)
+my_bar = st.progress(0)
 
 for percentage_complete in range(100):
-	time.sleep(0.05)
-	my_bar.progress(percent_complete + 1)
+     time.sleep(0.05)
+     my_bar.progress(percent_complete + 1)
 	
 st.title('Biryani')
 uploaded_file = st.file_uploader("Choose a file")
